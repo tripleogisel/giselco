@@ -1,0 +1,75 @@
+html {
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Serif;
+}
+
+body {
+  background-color: white;
+  color: #191919;
+  margin: 0px;
+}
+
+/*full screen css*/
+.frontPageText{
+  width: 40%;
+}
+
+.textButton {
+  font-size: 16px;
+  color: blue;
+  text-decoration: underline;
+}
+
+button{
+  background-color: blue;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 3rem 4rem;
+  border: 0px;
+}
+
+button:hover {
+  background-color: white;
+  color: blue;
+  font-size: 1.55rem;
+}
+
+button:active {
+  background-color: #eee;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: .125rem;
+}
+
+.question {
+  text-transform: uppercase;
+  color: #5a5a5a;
+  margin: 3rem 0rem 0rem 0rem;
+  font-weight: bolder;
+  font-size: .75rem;
+}
+
+.answer {
+  margin: .5rem 0rem 0rem 0rem;
+  width: 90%;
+  /*font-size: 2px;*/
+}
+
+.flexBoxContainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: space-around;
+  margin: 4rem 8rem;
+}
