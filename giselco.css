@@ -14,15 +14,34 @@ body {
   width: 40%;
 }
 
+.contact {
+  font-size: 1rem;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 .textButton {
   font-size: 16px;
   color: blue;
   text-decoration: underline;
 }
 
-button{
+.textButton:hover {
+  font-weight: bold;
+}
+
+.textButton:active {
+  background-color: #eee;
+}
+
+.blueButton{
   background-color: blue;
-  color: white;
   text-align: center;
   text-transform: uppercase;
   line-height: 1.5rem;
@@ -30,15 +49,18 @@ button{
   font-weight: bold;
   padding: 3rem 4rem;
   border: 0px;
+  color: white;
+  text-decoration: none;
 }
 
-button:hover {
+
+.blueButton:hover {
   background-color: white;
   color: blue;
   font-size: 1.55rem;
 }
 
-button:active {
+.blueButton:active {
   background-color: #eee;
 }
 
@@ -46,6 +68,7 @@ button:active {
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: .125rem;
+  margin-bottom: .75rem;
 }
 
 .question {
@@ -62,7 +85,7 @@ button:active {
   /*font-size: 2px;*/
 }
 
-.flexBoxContainer {
+.container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -72,4 +95,33 @@ button:active {
   -webkit-justify-content: center;
   justify-content: space-around;
   margin: 4rem 8rem;
+}
+
+@media (max-width: 480px){
+  .container {
+    display: block;
+    margin: 0;
+  }
+
+  .frontPageText {
+    padding: 2rem 0rem 2rem 2rem;
+    width: 90%;
+    font-size: .9rem;
+  }
+
+  .blueButton {
+    position: relative;
+    margin-top: 2rem;
+    display: block;
+  }
+
+  .blueButton:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  .blueButton:active {
+    background-color: #eee;
+    color: blue;
+  }
 }
