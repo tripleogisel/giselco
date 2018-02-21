@@ -1,0 +1,381 @@
+html {
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Serif;
+}
+
+body {
+  background-color: white;
+  color: #191919;
+  margin: 0px;
+}
+
+/*full screen css*//*full screen css*//*full screen css*//*full screen css*//*full screen css*/
+.frontPageText{
+  width: 40%;
+}
+
+
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.textButton {
+  font-size: 16px;
+  color: blue;
+  text-decoration: underline;
+  display: block;
+}
+
+.textButton:hover {
+  font-weight: bold;
+}
+
+.textButton:active {
+  background-color: #eee;
+}
+
+/*front page styles*//*front page styles*//*front page styles*//*front page styles*/
+.blueButton{
+  background-color: blue;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 3rem 4rem;
+  border: 0px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}
+
+
+.blueButton:hover {
+  background-color: #fafafa;
+  color: blue;
+}
+
+.blueButton:active {
+  background-color: #eee;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.purple:hover {
+  color: purple;
+  background-color: #fafafa
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: .075rem;
+  margin-bottom: .75rem;
+}
+
+.question {
+  text-transform: uppercase;
+  color: #5a5a5a;
+  margin: 3rem 0rem 0rem 0rem;
+  font-weight: bolder;
+  font-size: .75rem;
+}
+
+.answer {
+  margin: .5rem 0rem 0rem 0rem;
+  width: 90%;
+  /*font-size: 2px;*/
+}
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: space-around;
+  margin: 4rem 8rem;
+}
+
+/*landing page for work styles*/
+
+nav {
+  background-color: #eee;
+  display: block;
+  padding: 2rem 2rem;
+  /*margin-bottom: 4rem;*/
+}
+
+footer {
+  padding: 4rem;
+  background-color: #c3c3c3;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(0,0,0,.34);
+
+}
+
+.dribbble {
+  background-color: lightblue;
+}
+
+.mocks {
+  background-color: lightgreen;
+}
+
+.headline {
+  display: inline-block;
+}
+
+.headerButton {
+  float: right;
+  line-height: 44px;
+}
+
+.workSection {
+  display: block;
+  text-align: center;
+  color: #191919;
+  padding: 16rem 4rem;
+  margin: 4rem;
+}
+
+.ooogIntro {
+  background-color: white;
+  padding-top: 0rem;
+  padding-bottom: 4rem;
+}
+
+.ooogIntro h1 {
+  font-size: 8rem;
+  line-height: 8rem;
+  margin-bottom: 2rem;
+}
+
+.ooogIntro p {
+  margin: 0 auto;
+  text-align: left;
+  width: 40%;
+  font-size: 1.25rem;
+}
+
+a:-webkit-any-link {
+    /*color: #191919;*/
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.notreDame {
+  background-color: #00843D;
+}
+
+/*.notreDame h1 {
+  color: white;
+}
+
+.notreDame p {
+  color: white;
+}*/
+
+.expappRedesign {
+  background-color: #65c1ae;
+}
+
+/*styles for the work pages*/
+
+.compressed {
+  padding: 4rem;
+}
+
+.projectIntro {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: space-between;
+  margin: 4rem;
+  padding: 0rem 6rem 4rem;
+  border-bottom: 1px solid grey;
+}
+
+.projectHero {
+  /*padding: 0rem 4rem 0rem 0rem;*/
+  width: 300px;
+  padding-top: 2rem;
+}
+
+.processPart {
+  margin: 4rem;
+  padding: 0rem 6rem 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.conclusion {
+  border: none;
+  padding-bottom: 3rem;
+}
+
+.projectIntroText {
+  text-align: left;
+  width: 50%;
+}
+
+.horizontalPhoto {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.caseAnswer {
+  width: 50%;
+}
+
+.endButtons {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  background-color: blue;
+  color: white;
+  margin: 2rem 8rem;
+  text-decoration: none;
+}
+
+/*mobile styles*//*mobile styles*//*mobile styles*//*mobile styles*//*mobile styles*//*mobile styles*/
+
+@media (max-width: 480px){
+  .container {
+    display: block;
+    margin: 0;
+  }
+
+  .headerButton {
+    line-height: 24px;
+  }
+
+  .frontPageText {
+    padding: 2rem 0rem 2rem 2rem;
+    width: 90%;
+    font-size: .9rem;
+  }
+
+  .blueButton {
+    position: relative;
+    margin-top: 2rem;
+    display: block;
+  }
+
+  .blueButton:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  .blueButton:active {
+    background-color: #eee;
+    color: blue;
+  }
+
+  /*LANDING WORK MOBILE STYLES*/
+
+  .workSection {
+    display: block;
+    text-align: center;
+    color: #191919;
+    padding: 2.5rem 1.25rem;
+    margin: 1rem;
+  }
+
+  .ooogIntro {
+    background-color: white;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+  }
+
+  .headline {
+    font-size: 1rem;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  nav .headline {
+    margin: 0;
+  }
+
+  p {
+    display: block;
+    -webkit-margin-before: 0rem;
+    -webkit-margin-after: 0rem;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+
+  .ooogIntro h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: .5rem;
+  }
+
+  h1 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0rem;
+    -webkit-margin-after: 0rem;
+    -webkit-margin-start: 0rem;
+    -webkit-margin-end: 0rem;
+    font-weight: bold;
+}
+
+  .ooogIntro p {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /*case study styles*//*case study styles*//*case study styles*//*case study styles*/
+
+  .projectIntro {
+    display: block;
+    margin: 1rem;
+    padding: 0rem 0rem 2rem;
+  }
+
+  .projectIntroText {
+    width: 95%;
+  }
+
+  .caseAnswer{
+    width: 95%;
+  }
+
+  .endButtons {
+    margin: 1rem;
+  }
+
+  .projectHero {
+    display: none;
+  }
+
+  .processPart {
+    margin: 1rem;
+    padding: 0rem;
+  }
+
+  .conclusion {
+    padding-bottom: 3rem;
+  }
+
+}
