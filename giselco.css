@@ -11,9 +11,32 @@ body {
 
 /*full screen css*//*full screen css*//*full screen css*//*full screen css*//*full screen css*/
 .frontPageText{
-  width: 40%;
+  width: 60%;
 }
 
+.frontPageGif {
+  width: 340px;
+}
+
+.frontPageHeader {
+  background-color: black;
+  color: white;
+  padding: 1rem 8rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: space-between;
+  /*margin: 4rem 8rem;*/
+}
+
+/*.frontPageHeader p {
+  display: inline-block;
+  margin-left: 10rem; 
+}*/
 
 p {
     display: block;
@@ -24,7 +47,6 @@ p {
 }
 
 .textButton {
-  font-size: 16px;
   color: blue;
   text-decoration: underline;
   display: block;
@@ -39,8 +61,8 @@ p {
 }
 
 /*front page styles*//*front page styles*//*front page styles*//*front page styles*/
-.blueButton{
-  background-color: blue;
+.bigButton{
+  background-color: lightgreen;
   text-align: center;
   text-transform: uppercase;
   line-height: 1.5rem;
@@ -48,48 +70,54 @@ p {
   font-weight: bold;
   padding: 3rem 4rem;
   border: 0px;
-  color: white;
+  color: #191919;
   text-decoration: none;
   display: block;
   margin-top: 1rem;
 }
 
 
-.blueButton:hover {
+.bigButton:hover {
   background-color: #fafafa;
-  color: blue;
 }
 
-.blueButton:active {
+.bigButton:active {
   background-color: #eee;
 }
 
-.purple {
-  background-color: purple;
+.bigButton:visited {
+  color: #191919;
 }
 
-.purple:hover {
-  color: purple;
-  background-color: #fafafa
+
+body > section > div > p:nth-child(7) {
+  margin-bottom: 0rem;
+}
+
+.frontPageHeader a {
+  color: lightgreen;
+}
+
+.frontPageText a {
+  display: inline-block;
 }
 
 .headline {
   font-weight: bold;
   font-size: 1.5rem;
-  letter-spacing: .075rem;
-  margin-bottom: .75rem;
+  margin: 1rem 0rem 3.5rem;
 }
 
 .question {
   text-transform: uppercase;
   color: #5a5a5a;
-  margin: 3rem 0rem 0rem 0rem;
+  margin: 0rem;
   font-weight: bolder;
   font-size: .75rem;
 }
 
 .answer {
-  margin: .5rem 0rem 0rem 0rem;
+  margin: .5rem 0rem 3rem 0rem;
   width: 90%;
   /*font-size: 2px;*/
 }
@@ -103,17 +131,11 @@ p {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: space-around;
-  margin: 4rem 8rem;
+  margin: 4rem 10rem;
 }
 
 /*landing page for work styles*/
 
-nav {
-  background-color: #eee;
-  display: block;
-  padding: 2rem 2rem;
-  /*margin-bottom: 4rem;*/
-}
 
 footer {
   padding: 4rem;
@@ -121,15 +143,43 @@ footer {
   text-align: center;
   margin: 0 auto;
   color: rgba(0,0,0,.34);
-
 }
 
+.projectButton {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 12rem;
+  background-color: rgba(255,255,255,.54);
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+.projectButton:hover {
+  background-color: rgba(255,255,255,.87);
+  font-size: 1.025rem;
+  border: 2px solid white;
+  color: #191919;
+} 
+
+.projectButton:active {
+  background-color: rgba(255,255,255,.87);
+  font-size: 1.125rem;
+  border: 2px solid white;
+} 
+
+.workSection:hover {
+  background-color: black;
+  color: lightgreen;
+}
+
+.workSection:active {}
+
 .dribbble {
-  background-color: lightblue;
+  background-color: #30b5ef;
 }
 
 .mocks {
-  background-color: lightgreen;
+  background-color: #b360f4;
 }
 
 .headline {
@@ -159,6 +209,7 @@ footer {
   font-size: 8rem;
   line-height: 8rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .ooogIntro p {
@@ -175,7 +226,9 @@ a:-webkit-any-link {
 }
 
 .notreDame {
-  background-color: #00843D;
+  background-color: #4566ef;
+  background-image: url("nd-bg-image.png");
+  color: black;
 }
 
 /*.notreDame h1 {
@@ -269,18 +322,18 @@ a:-webkit-any-link {
     font-size: .9rem;
   }
 
-  .blueButton {
+  .bigButton {
     position: relative;
     margin-top: 2rem;
     display: block;
   }
 
-  .blueButton:hover {
+  .bigButton:hover {
     background-color: blue;
     color: white;
   }
 
-  .blueButton:active {
+  .bigButton:active {
     background-color: #eee;
     color: blue;
   }
