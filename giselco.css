@@ -19,9 +19,9 @@ body {
 }
 
 .frontPageHeader {
-  background-color: black;
-  color: white;
-  padding: 1rem 8rem;
+  background-color: white;
+  color: black;
+  padding: 2rem 8rem;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -29,9 +29,42 @@ body {
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   /*margin: 4rem 8rem;*/
 }
+
+.frontPageHeader a {
+  margin-left: 2rem;
+   color: #191919;
+   text-transform: uppercase;
+   font-weight: 500;
+   padding: .25rem;
+}
+
+
+.frontPageHeader a:hover {
+   margin-left: 2rem;
+   color: white;
+   background-color: blue;
+   text-decoration: underline;
+}
+
+.frontPageHeader a:active {
+   margin-left: 2rem;
+   color: blue;
+   text-decoration: underline;
+}
+
+#selectedNav {
+  color: blue;
+}
+
+#selectedNav:hover {
+  color: blue;
+  background-color: white;
+}
+
+
 
 /*.frontPageHeader p {
   display: inline-block;
@@ -94,19 +127,20 @@ body > section > div > p:nth-child(7) {
   margin-bottom: 0rem;
 }
 
-.frontPageHeader a {
-  color: lightgreen;
-}
-
-.frontPageText a {
+/*.frontPageText a {
   display: inline-block;
 }
-
+*/
 .headline {
   font-weight: bold;
-  font-size: 1.5rem;
-  margin: 1rem 0rem 3.5rem;
+  font-size: 2.75rem;
+  margin: 1rem 0rem .75rem;
 }
+
+/*.headline::before {
+  content: url(logo.png);
+  width: 50%;
+}*/
 
 .question {
   text-transform: uppercase;
@@ -119,20 +153,83 @@ body > section > div > p:nth-child(7) {
 .answer {
   margin: .5rem 0rem 3rem 0rem;
   width: 90%;
+  line-height: 1.5rem;
   /*font-size: 2px;*/
 }
 
 .container {
-  display: -webkit-flex;
+  display: block;
+  padding: 4rem 8rem;
+}
+
+.work {
+  background-color: #eee;
+  padding: 8rem;
+}
+
+/*.work p {
+  padding: 6rem 0rem 0rem 6rem;
+}*/
+
+.workCaption {
+  margin-bottom: 3rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.frontPage {
+  margin-bottom: 1.5rem;
+}
+
+.workPreviews {
+  display: block;
+  /*display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
-  justify-content: space-around;
-  margin: 4rem 10rem;
+  justify-content: space-around;*/
 }
+
+.workPreviews div {
+  height: 31rem;
+  background-color: lightgrey;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 2rem 2rem 0rem 0rem;
+  color: white;
+  text-align: right
+}
+
+.workPreviews:hover div {
+  color: white;
+  text-decoration: underline;
+}
+
+.secondRecentWork {
+  margin-top: 8rem;
+}
+
+.firstRecentWork div {
+  background-image: url("nd-project-3.png");
+  background-size: 101%;
+}
+
+.workPreview a:hover {
+  background-color: red;
+}
+
+
+
+.secondRecentWork div {
+  background-image: url("exp-project-3.png");
+  background-size: 101%; 
+}
+
 
 /*landing page for work styles*/
 
@@ -155,9 +252,7 @@ footer {
 }
 
 .projectButton:hover {
-  background-color: rgba(255,255,255,.87);
-  font-size: 1.025rem;
-  border: 2px solid white;
+  background-color: rgba(255,255,255,1);
   color: #191919;
 } 
 
@@ -167,19 +262,20 @@ footer {
   border: 2px solid white;
 } 
 
-.workSection:hover {
+/*.workSection:hover {
   background-color: black;
   color: lightgreen;
-}
+}*/
 
 .workSection:active {}
 
 .dribbble {
-  background-color: #30b5ef;
+  background-image: url("motion-project.gif");
+  background-position: 99% 90%;
 }
 
 .mocks {
-  background-color: #b360f4;
+  background-image: url("mocks-project.png");
 }
 
 .headline {
@@ -206,17 +302,17 @@ footer {
 }
 
 .ooogIntro h1 {
-  font-size: 8rem;
-  line-height: 8rem;
-  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-top: 4rem; 
+  margin-bottom: 4rem;
   text-align: center;
 }
 
 .ooogIntro p {
   margin: 0 auto;
   text-align: left;
-  width: 40%;
-  font-size: 1.25rem;
+  width: 50%;
 }
 
 a:-webkit-any-link {
@@ -226,9 +322,8 @@ a:-webkit-any-link {
 }
 
 .notreDame {
-  background-color: #4566ef;
-  background-image: url("nd-bg-image.png");
-  color: black;
+  background-image: url("nd-project.png");
+  color: white;
 }
 
 /*.notreDame h1 {
@@ -240,7 +335,8 @@ a:-webkit-any-link {
 }*/
 
 .expappRedesign {
-  background-color: #65c1ae;
+  background-image: url("exp-project.png");
+  color: white;
 }
 
 /*styles for the work pages*/
@@ -265,14 +361,23 @@ a:-webkit-any-link {
 
 .projectHero {
   /*padding: 0rem 4rem 0rem 0rem;*/
-  width: 300px;
-  padding-top: 2rem;
+  width: 330px;
 }
+
+.about {
+    border: 1px solid white;
+  }
 
 .processPart {
   margin: 4rem;
-  padding: 0rem 6rem 2rem;
+  padding: 0rem 12rem 2rem;
   border-bottom: 1px solid grey;
+}
+
+.about {
+  margin: 0rem;
+  padding: 0rem 12rem 2rem;
+  border-bottom: 0px solid grey;
 }
 
 .conclusion {
@@ -290,9 +395,9 @@ a:-webkit-any-link {
   width: 100%;
 }
 
-.caseAnswer {
+/*.caseAnswer {
   width: 50%;
-}
+}*/
 
 .endButtons {
   display: block;
@@ -310,16 +415,77 @@ a:-webkit-any-link {
   .container {
     display: block;
     margin: 0;
+    padding: 1.2rem;
   }
 
-  .headerButton {
-    line-height: 24px;
+  .firstRecentWork div {
+  background-image: url("nd-project-mobile.png");
+}
+
+.secondRecentWork div {
+  background-image: url("exp-project-mobile.png");
+}
+
+  .horizontalPhoto {
+  margin: 1.2rem auto;
+  width: 100%;
+}
+
+  .testContainer {
+    margin: 1.2rem;
   }
+
+  .about {
+    border: 1px solid white;
+  }
+
+  .frontPageHeader{
+    font-size: .75rem;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+  }
+
+  .frontPageHeader a {
+    margin: 0rem;
+  }
+
+  .frontPageHeader a:hover {
+   margin: 0rem;
+   background-color: white;
+   color: blue;
+ }
+
+ .frontPage {
+  font-size: .8rem;
+ }
 
   .frontPageText {
-    padding: 2rem 0rem 2rem 2rem;
+    /*padding: 2rem 0rem 2rem 2rem;*/
     width: 90%;
-    font-size: .9rem;
+    text-align: left;
+  }
+
+  .work {
+    display: block;
+    padding: 1.2rem;
+  }
+
+  .workPreviews {
+    display: block;
+  }
+
+.workPreviews div {
+  display: block;
+  background-color: lightgrey;
+  height: 16rem;
+  }
+
+  .workCaption {
+    margin-bottom: 1rem;
+  }
+
+  .secondRecentWork {
+    margin-top: 1.2rem;
   }
 
   .bigButton {
@@ -343,9 +509,8 @@ a:-webkit-any-link {
   .workSection {
     display: block;
     text-align: center;
-    color: #191919;
     padding: 2.5rem 1.25rem;
-    margin: 1rem;
+    margin: 0rem 0rem 1.2rem 0rem;
   }
 
   .ooogIntro {
@@ -356,7 +521,7 @@ a:-webkit-any-link {
   }
 
   .headline {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   nav {
@@ -365,6 +530,10 @@ a:-webkit-any-link {
 
   nav .headline {
     margin: 0;
+  }
+
+  .answer {
+    width: 100%;
   }
 
   p {
@@ -376,26 +545,31 @@ a:-webkit-any-link {
   }
 
   .ooogIntro h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
   }
+
+  .projectButton {
+    padding: .5rem;
+  }
+
 
   h1 {
     display: block;
-    font-size: 1.5em;
+    font-size: 1em;
     -webkit-margin-before: 0rem;
     -webkit-margin-after: 0rem;
     -webkit-margin-start: 0rem;
     -webkit-margin-end: 0rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
   .ooogIntro p {
     margin: 0 auto;
     text-align: left;
     width: 100%;
-    font-size: 1rem;
+    /*font-size: 1rem;*/
   }
 
   /*case study styles*//*case study styles*//*case study styles*//*case study styles*/
@@ -410,12 +584,37 @@ a:-webkit-any-link {
     width: 95%;
   }
 
+  .notreDame {
+    background-color: #032342;
+    background-image: none;
+  }
+
+  .expappRedesign {
+    background-color: #674AE2;
+    background-image: none;
+  }
+
+  .dribbble {
+   background-color: lightgreen; 
+   background-image: none;
+  }
+
+  .mocks {
+    background-color: #4AE2B4;
+    background-image: none;
+  }
+
   .caseAnswer{
     width: 95%;
   }
 
   .endButtons {
     margin: 1rem;
+  }
+
+  .frontTitle {
+    margin-bottom: .5rem;
+    margin-top: 1.2rem;
   }
 
   .projectHero {
