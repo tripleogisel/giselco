@@ -478,6 +478,7 @@ a:-webkit-any-link {
   display: block;
   background-color: lightgrey;
   height: 16rem;
+  color: rgba(255, 255, 255, 0);
   }
 
   .workCaption {
