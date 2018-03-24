@@ -183,6 +183,10 @@ body > section > div > p:nth-child(7) {
   margin-bottom: 1.5rem;
 }
 
+.photoStream {
+  margin: 8rem;
+}
+
 .workPreviews {
   display: block;
   /*display: -webkit-flex;
@@ -395,6 +399,39 @@ a:-webkit-any-link {
   width: 100%;
 }
 
+.photoStream > .horizontalPhoto {
+  margin: 4rem auto;
+}
+
+.photoStream > .answer {
+  text-align: center
+}
+
+.photoStream > .answer > a {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.photoStream > .answer > a:hover {
+   color: white;
+   background-color: blue;
+   text-decoration: underline;
+}
+
+.photoStream > .answer > .selectedText > a:hover {
+   color: blue;
+   background-color: white;
+   text-decoration: underline;
+}
+
+.selectedText {
+  color: blue;
+}
+
+.deselectedText {
+  color: #3a3a3a;
+}
+
 /*.caseAnswer {
   width: 50%;
 }*/
@@ -416,6 +453,14 @@ a:-webkit-any-link {
     display: block;
     margin: 0;
     padding: 1.2rem;
+  }
+
+  .photoStream {
+    margin: 1rem;
+  }
+
+  .photoStream > .horizontalPhoto {
+    margin: .5rem auto;
   }
 
   .firstRecentWork div {
