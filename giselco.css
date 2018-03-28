@@ -184,7 +184,11 @@ body > section > div > p:nth-child(7) {
 }
 
 .photoStream {
-  margin: 8rem;
+  margin: 8rem 12rem;
+}
+
+.graphic > img {
+  max-width: 100%;
 }
 
 .workPreviews {
@@ -330,6 +334,10 @@ a:-webkit-any-link {
   color: white;
 }
 
+.graphicWork {
+  background-image: url("graphic-40-cover.png");
+}
+
 /*.notreDame h1 {
   color: white;
 }
@@ -340,7 +348,6 @@ a:-webkit-any-link {
 
 .expappRedesign {
   background-image: url("exp-project.png");
-  color: white;
 }
 
 /*styles for the work pages*/
@@ -405,6 +412,10 @@ a:-webkit-any-link {
 
 .photoStream > .answer {
   text-align: center
+}
+
+.graphic > .answer {
+  text-align: left;
 }
 
 .photoStream > .answer > a {
@@ -631,17 +642,23 @@ a:-webkit-any-link {
   }
 
   .notreDame {
-    background-color: #032342;
+    background-color: darkseagreen;
     background-image: none;
+    color: #3a3a3a;
   }
 
   .expappRedesign {
-    background-color: #674AE2;
+    background-color: darkcyan;
     background-image: none;
   }
 
   .dribbble {
    background-color: lightgreen; 
+   background-image: none;
+  }
+
+  .graphicWork {
+   background-color: lightblue; 
    background-image: none;
   }
 
