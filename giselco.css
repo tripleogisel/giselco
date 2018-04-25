@@ -391,6 +391,25 @@ a:-webkit-any-link {
   border-bottom: 0px solid grey;
 }
 
+.logoBox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: space-around;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: space-around;
+  margin: 4rem 8rem;
+  padding: 0rem;
+  flex-wrap: wrap;
+}
+
+.logoPhoto {
+  height: 150px;
+  margin-right: 2rem;
+}
+
 .conclusion {
   border: none;
   padding-bottom: 3rem;
@@ -465,6 +484,25 @@ a:-webkit-any-link {
     margin: 0;
     padding: 1.2rem;
   }
+
+  .logoBox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: space-around;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: space-around;
+  margin: 1rem 2rem;
+  padding: 0rem;
+  flex-wrap: wrap;
+}
+
+.logoPhoto {
+  height: 100px;
+  margin-right: .5rem;
+}
 
   .photoStream {
     margin: 1rem;
