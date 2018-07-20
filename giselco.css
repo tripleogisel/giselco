@@ -57,6 +57,7 @@ body {
 
 #selectedNav {
   color: blue;
+  background-color: white;
 }
 
 #selectedNav:hover {
@@ -68,7 +69,7 @@ body {
 
 /*.frontPageHeader p {
   display: inline-block;
-  margin-left: 10rem; 
+  margin-left: 10rem;
 }*/
 
 p {
@@ -162,14 +163,73 @@ body > section > div > p:nth-child(7) {
   padding: 4rem 8rem;
 }
 
-.work {
-  background-color: #eee;
-  padding: 8rem;
+.navRed > p {
+  color: red;
 }
 
-/*.work p {
-  padding: 6rem 0rem 0rem 6rem;
-}*/
+.navRed >p:hover {
+  color: green;
+  background-color: white;
+}
+
+.work {
+  padding: 0rem 8rem 8rem 8rem;
+}
+
+.clientProject {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0rem 1rem;
+  letter-spacing: .5px;
+  font-weight: bold;
+}
+
+.workFrontPage {
+  height: 18rem;
+  text-align: center;
+  padding: 14rem 0rem 0rem;
+  margin-top: 3rem;
+}
+
+.firstWork {
+  background-color: yellow;
+  color: black;
+}
+
+.secondWork {
+  background-color: blue;
+  color: white;
+}
+
+.thirdWork {
+  background-color: green;
+  color: white;
+}
+
+.fourthWork {
+  background-color: navy;
+  color: lightgrey;
+}
+
+.fifthWork {
+  background-color: red;
+  color: white;
+}
+
+.sixthWork {
+  background-color: lightskyblue;
+  color: black;
+}
+
+.seventhWork {
+  background-color: #fafafa;
+}
+
+.workFrontPage:hover {
+  font-style: italic;
+}
+
 
 .workCaption {
   margin-bottom: 3rem;
@@ -218,36 +278,25 @@ body > section > div > p:nth-child(7) {
   text-decoration: underline;
 }
 
-.secondRecentWork {
-  margin-top: 8rem;
-}
-
-.firstRecentWork div {
-  background-image: url("nd-project-3.png");
-  background-size: 101%;
-}
-
 .workPreview a:hover {
   background-color: red;
 }
-
-
-
-.secondRecentWork div {
-  background-image: url("exp-project-3.png");
-  background-size: 101%; 
-}
-
-
 /*landing page for work styles*/
 
 
 footer {
   padding: 4rem;
-  background-color: #c3c3c3;
+  background-color: #eee;
   text-align: center;
   margin: 0 auto;
   color: rgba(0,0,0,.34);
+}
+
+.footerText {
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem;
+  color: rgba(0, 0, 0, 0.34);
 }
 
 .projectButton {
@@ -262,20 +311,14 @@ footer {
 .projectButton:hover {
   background-color: rgba(255,255,255,1);
   color: #191919;
-} 
+}
 
 .projectButton:active {
   background-color: rgba(255,255,255,.87);
   font-size: 1.125rem;
   border: 2px solid white;
-} 
+}
 
-/*.workSection:hover {
-  background-color: black;
-  color: lightgreen;
-}*/
-
-.workSection:active {}
 
 .dribbble {
   background-image: url("motion-project.gif");
@@ -310,9 +353,9 @@ footer {
 }
 
 .ooogIntro h1 {
-  font-size: 4rem;
-  line-height: 4rem;
-  margin-top: 4rem; 
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -375,14 +418,21 @@ a:-webkit-any-link {
   width: 330px;
 }
 
+.frontPageHeader a {
+  background-color: yellow;
+  padding: .25rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+}
+
 .about {
     border: 1px solid white;
   }
 
 .processPart {
-  margin: 4rem;
+  margin: 4rem 8rem;
   padding: 0rem 12rem 2rem;
-  border-bottom: 1px solid grey;
+  /*border-bottom: 1px solid grey;*/
 }
 
 .about {
@@ -483,6 +533,27 @@ a:-webkit-any-link {
     display: block;
     margin: 0;
     padding: 1.2rem;
+  }
+
+.work a:nth-child(1) > div {
+  margin-top: 0rem;
+}
+
+  .clientProject {
+    text-transform: uppercase;
+    font-size: 1.12rem;
+    margin-bottom: 0.5rem;
+    padding: 0rem 1rem;
+    letter-spacing: .5px;
+    font-weight: bold;
+  }
+
+  .workFrontPage {
+    height: 10rem;
+    text-align: center;
+    padding: 5rem 2rem 0rem;
+    margin-top: 3rem;
+    border-bottom: 8px solid rgba(0,0,0,.14);
   }
 
   .logoBox {
@@ -691,12 +762,12 @@ a:-webkit-any-link {
   }
 
   .dribbble {
-   background-color: lightgreen; 
+   background-color: lightgreen;
    background-image: none;
   }
 
   .graphicWork {
-   background-color: lightblue; 
+   background-color: lightblue;
    background-image: none;
   }
 
