@@ -154,7 +154,8 @@ body > section > div > p:nth-child(7) {
 .answer {
   margin: .5rem 0rem 3rem 0rem;
   width: 90%;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
   /*font-size: 2px;*/
 }
 
@@ -352,12 +353,17 @@ footer {
   padding-bottom: 4rem;
 }
 
-.ooogIntro h1 {
+.workSectionHeaders {
   font-size: 2.75rem;
   line-height: 2.75rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
   text-align: center;
+}
+
+.subHeader {
+  margin: 4rem 12%;
+  text-align: left;
 }
 
 .ooogIntro p {
@@ -478,6 +484,7 @@ a:-webkit-any-link {
 .photoStream > .horizontalPhoto {
   margin: 4rem auto;
 }
+
 
 .photoStream > .answer {
   text-align: center
