@@ -193,9 +193,14 @@ body > section > div > p:nth-child(7) {
   margin-top: 3rem;
 }
 
-.firstWork {
+.currentWork {
   background-color: yellow;
   color: black;
+}
+
+.firstWork {
+  background-color: black;
+  color: yellow;
 }
 
 .secondWork {
