@@ -314,6 +314,10 @@ body > section > div > p:nth-child(7) {
   display: none;
 }
 
+a > .footerText {
+  color: blue;
+}
+
 .frontPage {
   margin-bottom: 1.5rem;
 }
