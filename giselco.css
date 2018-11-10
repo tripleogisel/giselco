@@ -171,7 +171,7 @@ body > section > div > p:nth-child(7) {
 }
 
 .playLabApp {
-  padding: 160px 50px;
+  padding: 320px 50px;
 }
 
 .playLabCaption {
@@ -180,13 +180,50 @@ body > section > div > p:nth-child(7) {
   left: 40px;
   color: #3a3a3a;
   font-size: 16px;
+  width: 300px;
+  line-height: 22px;
+}
+.playLabApp > a {
+  color: black;
+  background-color: white;
+}
+
+.playLabCaption2 {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  color: #3a3a3a;
+  font-size: 16px;
+  text-align: right;
+}
+
+.playlabWorkOne {
+  background-color: #eee;
+}
+
+.playlabWorkTwo {
+  background-color: #ccc;
+}
+
+.playlabWorkTwo:hover {
+  background-color: yellow;
+}
+
+.playlabWorkOne:hover {
+  background-color: yellow;
+}
+
+.bigBody {
+  margin: 40px auto;
+  font-size: 24px;
+  width: 50%;
 }
 
 .navRed > p {
   color: red;
 }
 
-.fab {
+#fab {
   position: fixed;
   right: 40px;
   bottom: 40px;
@@ -579,8 +616,28 @@ a:-webkit-any-link {
     padding: 1.2rem;
   }
 
+  #fab {
+    height: 80px;
+    width: 80px;
+    right: 12px;
+    bottom: 12px;
+    line-height: 80px;
+    font-size: 14px;
+    margin
+  }
+
+  .playLabApp {
+    padding: 120px 24px;
+  }
+
 .work a:nth-child(1) > div {
   margin-top: 0rem;
+}
+
+.bigBody {
+  margin: 40px auto;
+  font-size: 18px;
+  width: 92%;
 }
 
   .clientProject {
@@ -744,6 +801,14 @@ a:-webkit-any-link {
 
   .answer {
     width: 100%;
+  }
+
+
+  .playLabCaption {
+    margin-top: 80px;
+    width: 92%;
+    position:inherit;
+    display: block;
   }
 
   p {
