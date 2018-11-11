@@ -171,13 +171,13 @@ body > section > div > p:nth-child(7) {
 }
 
 .playLabApp {
-  padding: 320px 50px;
+  padding: 400px 50px;
 }
 
 .playLabCaption {
   position: fixed;
-  top: 40px;
-  left: 40px;
+  top: 50px;
+  left: 50px;
   color: #3a3a3a;
   font-size: 16px;
   width: 300px;
@@ -190,8 +190,8 @@ body > section > div > p:nth-child(7) {
 
 .playLabCaption2 {
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 50px;
+  right: 50px;
   color: #3a3a3a;
   font-size: 16px;
   text-align: right;
@@ -628,6 +628,15 @@ a:-webkit-any-link {
     line-height: 80px;
     font-size: 14px;
     margin
+  }
+
+  .playLabCaption2 {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    color: #3a3a3a;
+    font-size: 16px;
+    text-align: right;
   }
 
   .playLabApp {
