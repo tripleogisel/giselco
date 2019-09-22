@@ -14,6 +14,16 @@ body {
   width: 60%;
 }
 
+.richs {
+  background-color: red;
+  color: white;
+}
+
+.allState{
+  background-color: navy;
+  color: white;
+}
+
 .frontPageGif {
   width: 340px;
 }
