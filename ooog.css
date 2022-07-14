@@ -1,0 +1,441 @@
+/*general site styles*/
+html {
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Serif;
+}
+
+body {
+	box-sizing: border-box;	
+	background-color: white;
+	margin: 0;
+}
+
+p {
+	-webkit-margin-before: 0rem;
+    -webkit-margin-after: 0rem;
+    -webkit-margin-start: 0rem;
+    -webkit-margin-end: 0rem;
+}
+
+button {
+	-webkit-appearance: none;
+}
+
+button:active {
+	border: none;
+}
+
+button:focus {
+	border: none;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+
+/*basic stlyes for the vending machine on the home page that serves as nav */
+
+/*img {
+	max-width: 200px;
+	margin: 2rem;
+}*/
+
+#home {
+	background-color: grey;
+	position: relative;
+}
+
+#floor {
+	margin-top: 25rem;
+    border-bottom: 31rem solid black;
+    border-left: 30rem solid transparent;
+    border-right: 30rem solid transparent;
+    opacity: .34;
+}
+
+.brainJump {
+	margin: 5rem;
+}
+
+.brains {
+	width: 100%;
+}
+
+#machine {
+	z-index: 1;
+	width: 20rem;
+	height: 36rem;
+	background-color: darkblue;
+
+	position: absolute;
+	left: 40%;
+	top: -100px;
+
+	border-left: .5rem solid #010062;
+	border-bottom: .25rem solid black;
+}
+
+.brand {
+	color: white;
+	padding: 2rem;
+    font-size: 1.25rem;
+    display: block;
+    -webkit-margin-before: 0rem;
+    -webkit-margin-after: 0rem;
+    -webkit-margin-start: 0rem;
+    -webkit-margin-end: 0rem;
+}
+
+.subtitle {
+	position: fixed;
+	bottom: 2rem;
+	left: 2rem;
+
+	background-color: black;
+	padding: 2rem;
+	color: white;
+	font-size: 1.25rem;
+
+	display: none;
+}
+
+/*first button on the machine*/
+.drank  {
+	width: 3rem;
+	height: 1rem;
+	position: absolute;
+}
+
+.userWork {
+	bottom: 20rem;
+	right: 3rem;
+	background-color: yellow;
+}
+
+/*second button on the machine*/
+.photoWork {
+	bottom: 17.5rem;
+	right: 3rem;
+
+	background-color: orange;
+}
+
+/*third button on the machine*/
+.brainWork {
+	bottom: 15rem;
+	right: 3rem;
+
+	background-color: purple;
+}
+
+/*fourth button on the machine*/
+.worker {
+	bottom: 12.5rem;
+	right: 3rem;
+
+	background-color: red;
+}
+
+/*fif button on the machine*/
+.credits {
+	bottom: 10rem;
+	right: 3rem;
+
+	background-color: green;
+}
+
+
+																	/*end of index styles*/
+
+
+
+
+
+
+
+
+
+/*reusuable mini nav for all content pages*/
+
+.shot {
+	display: inline-block;
+	position: absolute;
+	margin: 1rem;
+	height: 3rem;
+	right: 1rem;
+}
+
+#miniNav {
+	width: 100%;
+	background-color: black;
+	position: relative;
+}
+
+.siteNav {
+	display: inline-block;
+	margin: 1rem;
+}
+
+.pageNav {
+	margin-right: .75rem;
+}
+
+.miniNavButton {
+		width: 2rem;
+		height: 2rem;
+		background-color: rgba(255,255,255,.34);
+		display: inline-block;
+}
+
+.selectedMiniNav {
+	background-color: rgba(255,255,255,.54);
+}
+
+.miniBodega {
+	height: 3rem;
+	background-color: blue;
+}
+
+#miniNav > a.miniNavButtons.miniUserWork {
+	margin: 0;
+}
+
+
+
+														/*end mini nav styles*/
+
+
+body {
+ 	position: relative;
+ 	height: 100%;
+}
+
+
+footer {
+	height: 300px;
+	display: block;
+	background-color: #ddd;
+    width: 100%;
+}
+
+.footerTitle {
+	width: 100%;
+	text-align: center;
+	color: rgba(255,255,255,.34);
+	margin: 0px 0px 40px 0px;
+	padding-top: 20px
+}
+
+.externals {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: row;
+	-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+	-ms-flex-pack: distribute;
+	justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.externals>a {
+	margin-left: 20px;
+	color: rgba(255,255,255,.87);
+	text-transform: capitalize;
+	font-size: 2.25rem;
+}
+
+/*userWork carousel*/
+
+.carousel {
+	width: 100%;
+	background-color: rgba(0, 0, 0, .87);
+	position: fixed;
+	top: 0;
+}
+
+.superDark {
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.projectNav {
+	background-color: rgba(255, 255, 255, .34);
+	display: inline-block;
+	height: 3rem;
+	margin-left: .75rem;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	float: right;
+	opacity: .54;
+}
+
+.projectNav:hover {
+	opacity: .84;
+}
+
+
+.backward {
+	margin-right: 0px;
+}
+
+.disabled {
+	background-color: rgba(0, 0, 0, .34);
+	color: white;
+	opacity: .34;
+}
+
+#brainBody {
+	background-color: white;
+}
+
+#brainBucket {
+	transform: scale(0.25, 0.25);
+}
+
+.projectDisplay {
+	margin: 6rem 3rem 3rem;
+}
+
+.projectName {
+	text-transform: uppercase;
+	font-size: 3rem;
+}
+
+.projectDescription {
+	font-size: 2rem;
+	text-align: left;
+}
+
+body > section > img:nth-child(3) {
+	margin-top: 10rem
+}
+
+.projectImageCaption {
+	margin: 2rem 4rem 10rem 0rem;
+}
+
+
+/*photoWork styles*/
+#photoBody {
+	margin: 10rem;
+	background-color: white;
+}
+
+.photoStream {
+	margin-left: 30rem; 
+}
+
+.ooogPhotoCaption {
+	max-width: 400px;
+	text-align: left;
+	padding: 1rem 3rem 3rem 0rem;
+	display: none;
+}
+
+.ooogPhoto {
+	width: 75%;
+	border: .15rem solid #eee;
+	display: inline-block;
+}
+
+.ooogPhotoBucket {
+	display: inline-block;
+}
+
+
+
+/*mobile ish sizes*/
+@media (max-width: 480px){
+
+	.miniBodega {
+		height: 3rem;
+		background-color: blue;
+	}
+
+	.photoStream {
+	margin-left: 0rem; 
+}
+
+	.ooogPhoto {
+		width: 100%;
+	}
+
+	html {
+		font-size: 9px;
+	}
+
+	#floor{
+		display: none;
+	}
+
+	.externals {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: column;
+	-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	-ms-flex-pack: distribute;
+	justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+	.externals>a {
+	margin-left: 0px;
+	padding-bottom: 20px;
+}
+
+	.projectNav {
+		background-color: rgba(255, 255, 255, .34);
+		display: inline-block;
+		padding: 1rem;
+		border: none;
+		color: white;
+		text-transform: uppercase;
+		float: right;
+		opacity: .54;
+		display: inline-block;
+		height: 3rem;
+		padding:;
+	}
+
+
+	#machine{
+		margin: 10rem auto 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		border: none;
+	}
+
+	.subtitle {
+		bottom: .5rem;
+		left: .5rem;
+		padding: 1rem;
+		color: white;
+		font-weight: 700;
+		font-size: .75rem;
+
+		display: none;
+		background-color: 0, 0, 0, .04;
+
+	}
+}
+
+@media (min-width: 1300px){
+
+	#floor{
+		margin-top: 49rem;
+    	border-bottom: 37rem solid black;
+    	border-left: 36rem solid transparent;
+    	border-right: 36rem solid transparent;
+	}
+}
