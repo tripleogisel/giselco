@@ -39,7 +39,7 @@ button:focus {
 }*/
 
 #home {
-	background-color: grey;
+	background-color: #fafafa;
 	position: relative;
 }
 
@@ -48,7 +48,7 @@ button:focus {
     border-bottom: 31rem solid black;
     border-left: 30rem solid transparent;
     border-right: 30rem solid transparent;
-    opacity: .34;
+    opacity: .08;
 }
 
 .brainJump {
@@ -63,7 +63,7 @@ button:focus {
 	z-index: 1;
 	width: 20rem;
 	height: 36rem;
-	background-color: darkblue;
+	background-color: blue;
 
 	position: absolute;
 	left: 40%;
@@ -107,7 +107,7 @@ button:focus {
 .userWork {
 	bottom: 20rem;
 	right: 3rem;
-	background-color: yellow;
+	background-color: white;
 }
 
 /*second button on the machine*/
@@ -115,7 +115,7 @@ button:focus {
 	bottom: 17.5rem;
 	right: 3rem;
 
-	background-color: orange;
+	background-color: green;
 }
 
 /*third button on the machine*/
@@ -123,7 +123,7 @@ button:focus {
 	bottom: 15rem;
 	right: 3rem;
 
-	background-color: purple;
+	background-color: skyblue;
 }
 
 /*fourth button on the machine*/
@@ -139,7 +139,7 @@ button:focus {
 	bottom: 10rem;
 	right: 3rem;
 
-	background-color: green;
+	background-color: lavender;
 }
 
 
