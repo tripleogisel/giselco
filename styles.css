@@ -1,6 +1,5 @@
 body {
-	background-image: url("2.png");
-	scale: 100%;
+	background-color: #fafafa;
 }
 
 html {
@@ -9,11 +8,11 @@ font-family: monospace;
 }
 
 p {
-	color: white;
+	color: #333;
 }
 
 a {
-	color: white;
+	color: #333;
 	text-decoration: none;
 }
 
