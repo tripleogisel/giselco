@@ -9,6 +9,7 @@ font-family: monospace;
 
 p {
 	color: #333;
+	max-width: 33%;
 }
 
 a {
@@ -33,4 +34,8 @@ section {
 	section {
 		margin-top: 24%;
 	}
+	p {
+	color: #333;
+	max-width: 66%;
+}
 	}
